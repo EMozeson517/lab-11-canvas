@@ -1,0 +1,29 @@
+<!DOCTYPE.html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="draw()">
+<canvas id="sketch" width="600" height="600">
+</canvas>
+<script>
+
+function draw() {
+	var sketch = document.getElementById('sketch');
+	var context = sketch.getContext("2d");
+	// draw stuff here!
+
+//DEFINE the COLOR
+context.fillStyle = "#002c4c"
+
+context.fillRect (0, 100, 100, 100);
+//HEX NUMBER
+// 0 1 2 3 4 5 6 7 8 9 A B C D E F
+context.fillStyle = "#002c4c"
+context.arc(200, 150, 50, 50, 2 * Math.PI, true);
+context.closePath();
+context.fill();
+}
+</script>
+</body>
+</html>
